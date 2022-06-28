@@ -1,0 +1,41 @@
+@import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 64px;
+    gap: 16px;
+    border-radius: 12px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.primary {
+    background: $primary;
+    border-color: $primary;
+    &:hover {
+        background: $hover-primary;
+        border-color: $hover-primary;
+    }
+}
+
+.secondary {
+    background: $black;
+    border-color: $black;
+    color: $primary;
+    backdrop-filter: blur(80px);
+    &:hover {
+        color: $white;
+    }
+}
+
+.text {
+    font-family: $roboto-reg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $heading6;
+    line-height: 16px;
+    text-transform: uppercase;
+}
