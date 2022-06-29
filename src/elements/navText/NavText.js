@@ -1,14 +1,8 @@
 import React from "react";
-import styles from "./navText.module.scss"
+import styles from "./navText.module.scss";
 
-const NavText = ({children}) => {
-    return (
-        <React.Fragment>
-            <span className={`${styles.navText}`}>
-                {children}
-            </span>
-        </React.Fragment>
-    );
-}
+const NavText = ({ children }) => {
+  return <span className={`${styles.navText}`}>{children}</span>;
+};
 
 export default NavText;
