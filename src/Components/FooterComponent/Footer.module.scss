@@ -1,0 +1,71 @@
+@import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: space-around;
+  background: $black;
+}
+
+.leftSide {
+  text-align: left;
+}
+
+.center {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.removeMargin {
+  margin: 0 !important;
+}
+
+.textHeaderTop {
+  margin-top: 0 !important;
+  text-transform: none !important;
+}
+
+.textLink {
+  opacity: 0.78;
+}
+
+.rightSide {
+  text-align: left;
+}
+
+.subscribeText {
+  font-weight: 700;
+  width: 60%;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+}
+
+.formField {
+  padding-top: 30px;
+  height: 68px;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputField {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.btn {
+  position: absolute;
+  right: 230px;
+}
