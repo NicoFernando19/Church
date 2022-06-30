@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Text.module.scss";
+import PropTypes from "prop-types";
 
 const Text = ({ heading, children, className }) => {
   return (
@@ -23,6 +24,12 @@ const Text = ({ heading, children, className }) => {
       <p className={`${className}`}>{children}</p>
     </span>
   );
+};
+
+Text.propTypes = {
+  heading: PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default Text;
