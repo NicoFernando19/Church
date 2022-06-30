@@ -11,17 +11,17 @@ const Header = () => {
         <img src={logo} alt="LOGO" />
       </div>
       <div className={styles.divider}></div>
-      <ul>
-        <li>
+      <ul className={styles.headerNav}>
+        <li className={styles.headerList}>
           <NavText>Home</NavText>
         </li>
-        <li>
+        <li className={styles.headerList}>
           <NavText>About Us</NavText>
         </li>
-        <li>
+        <li className={styles.headerList}>
           <NavText>Sermon</NavText>
         </li>
-        <li>
+        <li className={styles.headerList}>
           <NavText>Blog</NavText>
         </li>
       </ul>

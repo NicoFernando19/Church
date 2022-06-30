@@ -1,0 +1,40 @@
+@import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
+
+.text {
+  font-family: $roboto-reg;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  opacity: 0.9;
+}
+
+.heading1 {
+  font-size: $heading1;
+}
+
+.heading2 {
+  font-size: $heading2;
+}
+
+.heading3 {
+  font-size: $heading3;
+}
+
+.heading4 {
+  font-size: $heading4;
+}
+
+.heading5 {
+  font-size: $heading5;
+}
+
+.heading6 {
+  font-size: $heading6;
+}
+
+.defaultSize {
+  font-size: $default;
+}
