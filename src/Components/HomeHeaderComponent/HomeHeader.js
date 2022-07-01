@@ -22,9 +22,11 @@ const HomeHeader = () => {
         <Row className={`${styles.row}`}>
           <Button primary={true}>Learn More</Button>
         </Row>
-        <Row className={`${styles.row}`}>
+        <Row
+          className={`${styles.row} ${styles.paddingTop4} ${styles.justifyContentLeft}`}
+        >
+          <Text className={styles.line}></Text>
           <Text heading={"h6"} className={`${styles.loremText}`}>
-            <span className={styles.line}></span>
             Lorem ipsum dolot sit amet, consectetur adipiscing elit, sed do.
           </Text>
         </Row>
