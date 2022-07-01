@@ -6,6 +6,10 @@ const Row = ({ children, className }) => {
   return <div className={`${styles.row} ${className}`}>{children}</div>;
 };
 
+Row.defaultProps = {
+  className: "",
+};
+
 Row.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
