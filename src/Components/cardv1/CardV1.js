@@ -6,7 +6,7 @@ import styles from "./CardV1.module.scss";
 const CardV1 = ({ icon, title, children }) => {
   return (
     <div className={`${styles.card} ${styles.bgColor}`}>
-      <div className={`${styles.padding}`}>
+      <div className={styles.padding}>
         <div className={`${styles.circle} ${icon}`}></div>
         <Text
           heading={"h4"}
@@ -21,7 +21,7 @@ const CardV1 = ({ icon, title, children }) => {
           {children}
         </Text>
       </div>
-      <div className={`${styles.cardFooter}`}></div>
+      <div className={styles.cardFooter}></div>
     </div>
   );
 };
