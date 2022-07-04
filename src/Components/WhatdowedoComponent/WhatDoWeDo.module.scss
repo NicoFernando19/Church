@@ -1,0 +1,35 @@
+@import "../../styles/colors.scss";
+@import "../../styles/homeImages.scss";
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.margin {
+  margin: 5rem 0 5rem 0;
+}
+
+.subHeadline {
+  color: $black;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.prayIcon {
+  background-image: $prayIcon;
+}
+
+.givingIcon {
+  background-image: $givingIcon;
+}
+
+.getInvolvedIcon {
+  background-image: $getInvolvedIcon;
+}
