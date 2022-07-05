@@ -1,0 +1,92 @@
+@import "../../styles/homeImages.scss";
+@import "../../styles/colors.scss";
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.margin {
+  margin: 5rem 0 5rem 0;
+}
+
+.subHeadline {
+  color: $black;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.row {
+  justify-content: space-around;
+
+  &TextDesc {
+    width: 44%;
+  }
+}
+
+.welcomeDesc {
+  text-transform: none;
+  margin-top: 0;
+}
+
+.contentCenter {
+  justify-content: center;
+}
+
+.imageLeft {
+  background-image: $beardedMan;
+}
+
+.imageCenter {
+  background-image: $readingBook;
+}
+
+.imageRight {
+  background-image: $blessingImage;
+}
+
+.button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 3rem;
+}
+
+.marginGallery {
+  margin: 6rem 0 0 0;
+}
+
+.ourMissionMargin {
+  margin: 3rem 0 0 0;
+}
+.ourMission {
+  color: $black;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.celebrate {
+  color: $black;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.loremText {
+  color: $black;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.readMore {
+  color: $black;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  margin-top: 0;
+}
