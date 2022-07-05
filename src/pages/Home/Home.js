@@ -1,5 +1,6 @@
 import React from "react";
 import HomeHeader from "../../Components/HomeHeaderComponent/HomeHeader";
+import Welcome from "../../Components/WelcomeComponent/Welcome";
 import WhatDoWeDo from "../../Components/WhatdowedoComponent/WhatDoWeDo";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <React.Fragment>
       <HomeHeader />
       <WhatDoWeDo />
+      <Welcome />
     </React.Fragment>
   );
 };

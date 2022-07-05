@@ -1,0 +1,29 @@
+@import "../../styles/homeImages.scss";
+
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0.7rem 0 0.7rem;
+
+  &Center {
+    @extend .image;
+    margin-top: 3rem;
+    height: 512px;
+    width: 390px;
+    border-radius: 32px;
+  }
+
+  &Left,
+  &Right {
+    @extend .image;
+    height: 384px;
+    width: 293px;
+    border-radius: 30px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
