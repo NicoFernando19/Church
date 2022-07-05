@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./Event.module.scss";
 import Text from "../../elements/text/Text";
 import Button from "../../elements/button/Button";
-/* eslint-disable */
+
 const Event = ({ title, desc, date, month, time, address, image }) => {
   return (
     <div className={styles.event}>
