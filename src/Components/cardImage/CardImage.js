@@ -1,14 +1,14 @@
 import React from "react";
 import Text from "../../elements/text/Text";
-import styles from "./Image.module.scss";
+import styles from "./CardImage.module.scss";
 import PropTypes from "prop-types";
 
-const Image = ({ image, children, desc }) => {
+const CardImage = ({ image, title, desc }) => {
   return (
     <div className={`${styles.background} ${image}`}>
       <div className={styles.titleWrapper}>
         <Text heading={"h4"} className={styles.title}>
-          {children}
+          {title}
         </Text>
         <Text className={styles.desc}>{desc}</Text>
       </div>
@@ -16,16 +16,16 @@ const Image = ({ image, children, desc }) => {
   );
 };
 
-Image.defaultProps = {
+CardImage.defaultProps = {
   image: styles.defaultBackground,
-  children: "Watch and listen to our sermons",
+  title: "Watch and listen to our sermons",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
 };
 
-Image.propTypes = {
+CardImage.propTypes = {
   image: PropTypes.string.isRequired,
-  children: PropTypes.node,
+  title: PropTypes.string,
   desc: PropTypes.string,
 };
 
-export default Image;
+export default CardImage;

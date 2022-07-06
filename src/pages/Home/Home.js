@@ -1,9 +1,9 @@
 import React from "react";
-import Benefits from "../../Components/BenefitsComponent/Benefits";
-import HomeHeader from "../../Components/HomeHeaderComponent/HomeHeader";
-import Upcoming from "../../Components/UpcomingComponent/Upcoming";
-import Welcome from "../../Components/WelcomeComponent/Welcome";
-import WhatDoWeDo from "../../Components/WhatdowedoComponent/WhatDoWeDo";
+import Benefits from "../../Components/Benefits/Benefits";
+import HomeHeader from "../../Components/HomeSections/HomeHeader/HomeHeader";
+import Upcoming from "../../Components/Upcoming/Upcoming";
+import Welcome from "../../Components/HomeSections/Welcome/Welcome";
+import WhatDoWeDo from "../../Components/HomeSections/Whatdowedo/WhatDoWeDo";
 
 const Home = () => {
   return (

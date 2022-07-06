@@ -1,22 +1,29 @@
 import React from "react";
-import Image from "../image/Image";
+import CardImage from "../cardImage/CardImage";
 import styles from "./Images.module.scss";
 
 const Images = () => {
   return (
     <div className={styles.row}>
-      <Image image={`${styles.background} ${styles.nunImage}`}>
-        WATCH AND LISTEN TO OUR SERMONS
-      </Image>
-      <Image image={`${styles.background} ${styles.bibleImage}`}>
-        WATCH AND LISTEN TO OUR SERMONS
-      </Image>
-      <Image image={`${styles.background} ${styles.manWithBook}`}>
-        WATCH AND LISTEN TO OUR SERMONS
-      </Image>
-      <Image image={`${styles.background} ${styles.paintingImage}`}>
-        WATCH AND LISTEN TO OUR SERMONS
-      </Image>
+      <CardImage
+        image={`${styles.background} ${styles.nunImage}`}
+        title={"WATCH AND LISTEN TO OUR SERMONS"}
+        desc={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+        }
+      />
+      <CardImage
+        image={`${styles.background} ${styles.bibleImage}`}
+        title={"WATCH AND LISTEN TO OUR SERMONS"}
+      />
+      <CardImage
+        image={`${styles.background} ${styles.manWithBook}`}
+        title={"WATCH AND LISTEN TO OUR SERMONS"}
+      />
+      <CardImage
+        image={`${styles.background} ${styles.paintingImage}`}
+        title={"WATCH AND LISTEN TO OUR SERMONS"}
+      />
     </div>
   );
 };
