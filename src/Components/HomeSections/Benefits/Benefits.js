@@ -1,8 +1,8 @@
 import React from "react";
-import Text from "../../elements/text/Text";
-import Container from "../../elements/wrapper/container/Container";
-import Row from "../../elements/wrapper/row/Row";
-import Images from "../Images/Images";
+import Text from "../../../elements/text/Text";
+import Container from "../../../elements/wrapper/container/Container";
+import Row from "../../../elements/wrapper/row/Row";
+import Images from "../../Images/Images";
 import styles from "./Benefits.module.scss";
 
 const Benefits = () => {
