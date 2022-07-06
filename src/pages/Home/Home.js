@@ -1,7 +1,9 @@
 import React from "react";
-import HomeHeader from "../../Components/HomeHeaderComponent/HomeHeader";
-import Welcome from "../../Components/WelcomeComponent/Welcome";
-import WhatDoWeDo from "../../Components/WhatdowedoComponent/WhatDoWeDo";
+import Benefits from "../../Components/HomeSections/Benefits/Benefits";
+import HomeHeader from "../../Components/HomeSections/HomeHeader/HomeHeader";
+import Upcoming from "../../Components/HomeSections/Upcoming/Upcoming";
+import Welcome from "../../Components/HomeSections/Welcome/Welcome";
+import WhatDoWeDo from "../../Components/HomeSections/Whatdowedo/WhatDoWeDo";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <HomeHeader />
       <WhatDoWeDo />
       <Welcome />
+      <Benefits />
+      <Upcoming />
     </React.Fragment>
   );
 };

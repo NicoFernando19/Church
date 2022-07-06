@@ -1,0 +1,123 @@
+@import "../../styles/colors.scss";
+@import "../../styles/homeImages.scss";
+
+.event {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding {
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+.date {
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: $black;
+  text-align: end;
+  margin-bottom: 0;
+}
+
+.month {
+  font-weight: 400;
+  line-height: 19px;
+  color: $black;
+  margin-top: 0;
+}
+
+.upcomingText {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 0;
+}
+
+.card {
+  width: 435px;
+  height: 512px;
+  background-color: $ligth-orange;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: $black;
+  width: 60%;
+  text-align: left;
+  margin-top: 0;
+}
+
+.desc {
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.78;
+  color: $black;
+  text-transform: none;
+  width: 80%;
+  text-align: left;
+}
+
+.timeWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.time {
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+  text-transform: none;
+  width: 70%;
+  text-align: left;
+  margin-top: 0;
+}
+
+.timeIcon {
+  background: $timeIcon;
+  width: 20px;
+  height: 20px;
+}
+
+.addressWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.address {
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+  text-transform: none;
+  width: 75%;
+  text-align: left;
+  margin-top: 0;
+}
+
+.addressIcon {
+  background: $addressIcon;
+  width: 20px;
+  height: 20px;
+}
+
+.angelImage {
+  background: $angelImage;
+}
+
+.image {
+  background-position: center;
+  background-size: cover;
+  width: 845px;
+  height: 512px;
+}

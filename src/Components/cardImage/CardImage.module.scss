@@ -1,0 +1,48 @@
+@import "../../styles/colors.scss";
+@import "../../styles/homeImages.scss";
+
+.defaultBackground {
+  background: $nunImage;
+}
+
+.background {
+  width: 302px;
+  height: 384px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .desc {
+      display: block;
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  padding: 0 1rem 0 1rem;
+}
+
+.titleWrapper {
+  position: absolute;
+  bottom: 0;
+  width: 302px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.desc {
+  display: none;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.78;
+  text-transform: none;
+  text-align: left;
+  padding: 0 1rem 0 1rem;
+}
+
+.descWrapper {
+  display: none;
+}

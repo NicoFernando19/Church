@@ -1,8 +1,8 @@
 import React from "react";
-import Text from "../../elements/text/Text";
-import Container from "../../elements/wrapper/container/Container";
-import Row from "../../elements/wrapper/row/Row";
-import CardV1 from "../cardv1/CardV1";
+import Text from "../../../elements/text/Text";
+import Container from "../../../elements/wrapper/container/Container";
+import Row from "../../../elements/wrapper/row/Row";
+import CardV1 from "../../cardv1/CardV1";
 import styles from "./WhatDoWeDo.module.scss";
 
 const WhatDoWeDo = () => {
