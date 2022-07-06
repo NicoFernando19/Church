@@ -1,11 +1,27 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "./button.module.scss";
 import PropTypes from "prop-types";
 
-const Button = ({ primary, type, children, className }) => {
+interface Props {
+  children?: ReactNode;
+  primary?: boolean;
+  type?: "submit" | "reset" | "button";
+  className?: string;
+}
+
+const defaultProps: Props = {
+  type: "button",
+};
+
+const Button: React.FC<Props> = ({
+  primary,
+  type,
+  children,
+  className,
+}: Props) => {
   return (
     <button
-      type={type ? type : "button"}
+      type={type}
       className={`${styles.button} ${
         primary ? styles.primary : styles.secondary
       } ${styles.text} ${className}`}
@@ -15,9 +31,10 @@ const Button = ({ primary, type, children, className }) => {
   );
 };
 
+Button.defaultProps = defaultProps;
+
 Button.propTypes = {
   primary: PropTypes.bool,
-  type: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
 };

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "./navText.module.scss";
 import PropTypes from "prop-types";
 
-const NavText = ({ children }) => {
+interface Props {
+  children?: ReactNode;
+}
+
+const NavText = ({ children }: Props) => {
   return <span className={`${styles.navText}`}>{children}</span>;
 };
 

@@ -2,7 +2,13 @@ import React from "react";
 import styles from "./Input.module.scss";
 import PropTypes from "prop-types";
 
-const Input = ({ type, placeholder, className }) => {
+interface Props {
+  type?: string;
+  placeholder?: string;
+  className?: string;
+}
+
+const Input: React.FC<Props> = ({ type, placeholder, className }: Props) => {
   return (
     <input
       type={type}
