@@ -1,10 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Event.module.scss";
-import Text from "../../elements/text/Text";
-import Button from "../../elements/button/Button";
+import Text from "elements/text/Text";
+import Button from "elements/button/Button";
 
-const Event = ({ title, desc, date, month, time, address, image }) => {
+interface Props {
+  title?: string;
+  desc?: string;
+  date?: string;
+  month?: string;
+  time?: string;
+  address?: string;
+  image?: string;
+}
+
+const defaultProps: Props = {
+  title: "Watch and Listen to our Sermons",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  date: "20",
+  month: "July",
+  time: "Friday 23:39 IST Saturday 11:20 ISD",
+  address: "No 233 Main St. New York, United States",
+  image: styles.angelImage,
+};
+
+const Event = ({ title, desc, date, month, time, address, image }: Props) => {
   return (
     <div className={styles.event}>
       <div className={styles.card}>
@@ -46,15 +66,7 @@ const Event = ({ title, desc, date, month, time, address, image }) => {
   );
 };
 
-Event.defaultProps = {
-  title: "Watch and Listen to our Sermons",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  date: "20",
-  month: "July",
-  time: "Friday 23:39 IST Saturday 11:20 ISD",
-  address: "No 233 Main St. New York, United States",
-  image: styles.angelImage,
-};
+Event.defaultProps = defaultProps;
 
 Event.propTypes = {
   title: PropTypes.string,

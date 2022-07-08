@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import logo from "../../Storage/Images/logo.png";
-import NavText from "../../elements/navText/NavText";
-import Button from "../../elements/button/Button";
+import logo from "Storage/Images/logo.png";
+import NavText from "elements/navText/NavText";
+import Button from "elements/button/Button";
 
 const Header = () => {
   return (

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "./Text.module.scss";
 import PropTypes from "prop-types";
 
-const Text = ({ heading, children, className }) => {
+interface Props {
+  heading?: string;
+  children?: ReactNode;
+  className?: string;
+}
+
+const Text = ({ heading, children, className }: Props) => {
   return (
     <span
       className={`${styles.text} ${

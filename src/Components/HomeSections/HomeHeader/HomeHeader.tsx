@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../../../elements/button/Button";
-import Text from "../../../elements/text/Text";
-import Container from "../../../elements/wrapper/container/Container";
-import Row from "../../../elements/wrapper/row/Row";
+import Button from "elements/button/Button";
+import Text from "elements/text/Text";
+import Container from "elements/wrapper/container/Container";
+import Row from "elements/wrapper/row/Row";
 import styles from "./HomeHeader.module.scss";
 
 const HomeHeader = () => {

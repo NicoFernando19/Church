@@ -1,10 +1,10 @@
 import React from "react";
-import Text from "../../../elements/text/Text";
-import Gallery from "../../../elements/gallery/Gallery";
-import Container from "../../../elements/wrapper/container/Container";
-import Row from "../../../elements/wrapper/row/Row";
+import Text from "elements/text/Text";
+import Gallery from "elements/gallery/Gallery";
+import Container from "elements/wrapper/container/Container";
+import Row from "elements/wrapper/row/Row";
 import styles from "./Welcome.module.scss";
-import Button from "../../../elements/button/Button";
+import Button from "elements/button/Button";
 
 const Welcome = () => {
   return (

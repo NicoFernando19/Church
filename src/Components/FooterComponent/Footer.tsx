@@ -1,14 +1,9 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import {
-  Logo,
-  Facebook,
-  Twitter,
-  LinkedIn,
-} from "../../Storage/footerImage/index";
-import Text from "../../elements/text/Text";
-import Input from "../../elements/input/Input";
-import Button from "../../elements/button/Button";
+import { Logo, Facebook, Twitter, LinkedIn } from "Storage/footerImage/index";
+import Text from "elements/text/Text";
+import Input from "elements/input/Input";
+import Button from "elements/button/Button";
 
 const Footer = () => {
   return (

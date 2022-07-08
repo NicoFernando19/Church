@@ -1,9 +1,21 @@
 import React from "react";
-import Text from "../../elements/text/Text";
+import Text from "elements/text/Text";
 import styles from "./CardImage.module.scss";
 import PropTypes from "prop-types";
 
-const CardImage = ({ image, title, desc }) => {
+interface Props {
+  image: string;
+  title: string;
+  desc: string;
+}
+
+const defaultProps: Props = {
+  image: styles.defaultBackground,
+  title: "Watch and listen to our sermons",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+};
+
+const CardImage = ({ image, title, desc }: Props) => {
   return (
     <div className={`${styles.background} ${image}`}>
       <div className={styles.titleWrapper}>
@@ -16,11 +28,7 @@ const CardImage = ({ image, title, desc }) => {
   );
 };
 
-CardImage.defaultProps = {
-  image: styles.defaultBackground,
-  title: "Watch and listen to our sermons",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-};
+CardImage.defaultProps = defaultProps;
 
 CardImage.propTypes = {
   image: PropTypes.string.isRequired,

@@ -2,7 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Gallery.module.scss";
 
-const Gallery = ({ imageLeft, imageCenter, imageRight }) => {
+interface Props {
+  imageLeft?: string;
+  imageCenter?: string;
+  imageRight?: string;
+}
+
+const defaultProps: Props = {
+  imageLeft: "",
+  imageRight: "",
+  imageCenter: "",
+};
+
+const Gallery: React.FC<Props> = ({
+  imageLeft,
+  imageCenter,
+  imageRight,
+}: Props) => {
   return (
     <div className={styles.flex}>
       <div className={`${styles.imageLeft} ${imageLeft}`} />
@@ -12,11 +28,7 @@ const Gallery = ({ imageLeft, imageCenter, imageRight }) => {
   );
 };
 
-Gallery.defaultProps = {
-  imageLeft: "",
-  imageRight: "",
-  imageCenter: "",
-};
+Gallery.defaultProps = defaultProps;
 
 Gallery.propTypes = {
   imageLeft: PropTypes.string,
