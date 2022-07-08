@@ -1,0 +1,9 @@
+@import '../../../styles/colors.scss';
+
+.tile {
+  width: auto;
+  height: auto;
+  min-height: 100px;
+  background: $white;
+  backdrop-filter: blur(40px);
+}
