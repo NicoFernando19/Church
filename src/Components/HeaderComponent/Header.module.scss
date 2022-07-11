@@ -1,5 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import 'styles/colors.scss';
+@import 'styles/typography.scss';
 
 .header {
   top: 0;
@@ -32,4 +32,8 @@
   height: 100%;
   opacity: 0.1;
   border: 2px solid $white;
+}
+
+.textLink {
+  color: $white;
 }
