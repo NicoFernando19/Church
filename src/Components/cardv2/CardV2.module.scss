@@ -1,0 +1,74 @@
+@import 'styles/colors.scss';
+
+.bgColor {
+  background-color: $ligth-orange;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.card {
+  width: 302px;
+  text-align: left;
+
+  &:hover {
+    cursor: pointer;
+    .cardFooter {
+      visibility: visible;
+    }
+  }
+}
+
+.cardFooter {
+  background: $primary;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 15px;
+  visibility: hidden;
+}
+
+.relation {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 0;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: $black;
+}
+
+.desc {
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+  opacity: 0.78;
+  text-transform: none;
+}
+
+.speaker {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $black;
+  text-transform: none;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.date {
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+  text-transform: none;
+  margin-top: 0;
+}
