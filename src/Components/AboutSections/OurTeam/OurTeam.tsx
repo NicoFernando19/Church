@@ -18,7 +18,7 @@ const OurTeam = () => {
           Meet Our Inspirational Team
         </Text>
       </Row>
-      <Row className={styles.row}>
+      <Row className={styles.ourTeamRow}>
         <CardMember
           image={styles.member1}
           name={'Kim Bowen'}
@@ -49,7 +49,7 @@ const OurTeam = () => {
           position={'Pastor, Church'}
           facebookLink={'#'}
           twitterLink={'#'}
-          linkedInLink={'https://www.linkedin.com/in/nico-fernando-b30ba9175/'}
+          linkedInLink={'#'}
         />
       </Row>
     </Container>

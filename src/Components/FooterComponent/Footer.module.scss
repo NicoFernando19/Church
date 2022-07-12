@@ -1,5 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
 
 .footer {
   display: flex;
@@ -38,6 +38,7 @@
 }
 
 .textLink {
+  color: $white;
   opacity: 0.78;
 }
 
