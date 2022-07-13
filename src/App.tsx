@@ -1,4 +1,5 @@
 import About from 'pages/About/About';
+import Blog from 'pages/Blog/Blog';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/blog' element={<Blog />} />
         </Routes>
         <Footer />
       </Router>

@@ -31,7 +31,11 @@ const Header = () => {
           <NavText>Sermon</NavText>
         </li>
         <li className={styles.headerList}>
-          <NavText>Blog</NavText>
+          <NavText>
+            <Link to='/blog'>
+              <a className={styles.textLink}>Blog</a>
+            </Link>
+          </NavText>
         </li>
       </ul>
       <div className={`${styles.button}`}>
