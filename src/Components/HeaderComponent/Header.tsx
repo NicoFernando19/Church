@@ -28,7 +28,11 @@ const Header = () => {
           </NavText>
         </li>
         <li className={styles.headerList}>
-          <NavText>Sermon</NavText>
+          <NavText>
+            <Link to='/sermons'>
+              <a className={styles.textLink}>Sermon</a>
+            </Link>
+          </NavText>
         </li>
         <li className={styles.headerList}>
           <NavText>Blog</NavText>

@@ -1,4 +1,5 @@
 import About from 'pages/About/About';
+import Sermons from 'pages/Sermons/Sermons';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/sermons' element={<Sermons />} />
         </Routes>
         <Footer />
       </Router>
