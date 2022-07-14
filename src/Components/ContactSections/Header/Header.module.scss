@@ -1,0 +1,41 @@
+@import 'styles/colors.scss';
+@import 'styles/typography.scss';
+@import 'styles/contactImage.scss';
+@import 'styles/global.scss';
+
+.row {
+  justify-content: space-between;
+}
+
+.container {
+  justify-content: space-between;
+  padding: 10rem 0 10rem 0;
+  width: 90%;
+}
+
+.backgroundImage {
+  background-image: $header;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contactText {
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 0;
+}
+
+.getInTouch {
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  width: 70%;
+}
