@@ -1,5 +1,6 @@
 @import 'styles/colors.scss';
 @import 'styles/aboutImages.scss';
+@import 'styles/typography.scss';
 
 .padding {
   padding: 5rem 0 5rem 0;
@@ -92,4 +93,14 @@
 
 .linkedin {
   background-image: $linkedin;
+}
+
+.textArea {
+  font-family: $roboto-reg;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
 }

@@ -32,11 +32,12 @@ const Form = () => {
               className={styles.input}
               placeholder={'Query Related'}
             ></Input>
-            <Input
-              type={'text'}
-              className={styles.input}
-              placeholder={'Message'}
-            ></Input>
+            <textarea
+              className={`${styles.input} ${styles.textArea}`}
+              id='message'
+              name='message'
+              placeholder='Message'
+            ></textarea>
             <Button primary={true} className={styles.button}>
               Send Message
             </Button>
