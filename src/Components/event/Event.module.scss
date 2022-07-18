@@ -46,7 +46,6 @@
 .card {
   width: 435px;
   height: auto;
-  background-color: $ligth-orange;
 
   &:hover {
     .cardFooter {
@@ -114,7 +113,7 @@
 .addressIcon {
   background: $addressIcon;
   width: 20px;
-  height: 20px;
+  height: 25px;
 }
 
 .angelImage {
