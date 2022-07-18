@@ -1,0 +1,61 @@
+@import 'styles/colors.scss';
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.row {
+  justify-content: left;
+}
+
+.body {
+  width: 50%;
+  padding-bottom: 5rem;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: $black;
+  text-align: left;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  opacity: 0.78;
+  margin-top: 0;
+  text-transform: none;
+  text-align: left;
+}
+
+.quoteWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.quoteLine {
+  width: 8px;
+  height: 85%;
+  background: $primary;
+}
+
+.quote {
+  font-weight: 400;
+  line-height: 150%;
+  color: $black;
+  opacity: 0.78;
+  text-align: left;
+}
+
+.ul {
+  padding-inline-start: 1em;
+}
