@@ -1,0 +1,39 @@
+@import 'styles/colors.scss';
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.padding {
+  padding: 5rem 0 5rem 0;
+}
+
+.subHeadline {
+  color: $black;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.cardRow {
+  justify-content: center;
+  gap: 25px;
+}
+
+.cardColor {
+  background-color: $white;
+}
+
+.cards {
+  width: 85%;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: left;
+}

@@ -1,5 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/homeImages.scss";
+@import '../../styles/colors.scss';
+@import '../../styles/homeImages.scss';
 
 .event {
   display: flex;
@@ -45,8 +45,13 @@
 
 .card {
   width: 435px;
-  height: 512px;
-  background-color: $ligth-orange;
+  height: auto;
+
+  &:hover {
+    .cardFooter {
+      visibility: visible;
+    }
+  }
 }
 
 .title {
@@ -108,10 +113,11 @@
 .addressIcon {
   background: $addressIcon;
   width: 20px;
-  height: 20px;
+  height: 25px;
 }
 
 .angelImage {
+  display: none;
   background: $angelImage;
 }
 
@@ -120,4 +126,19 @@
   background-size: cover;
   width: 845px;
   height: 512px;
+}
+
+.dBlock {
+  display: block;
+}
+
+.dNone {
+  display: none;
+}
+
+.cardFooter {
+  background: $primary;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 15px;
+  visibility: hidden;
 }

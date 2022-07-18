@@ -1,0 +1,46 @@
+@import 'styles/colors.scss';
+
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 3rem;
+  width: 75%;
+}
+
+.rightSide {
+  width: 45%;
+  text-align: left;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.headText {
+  font-weight: 400;
+  line-height: 19px;
+  color: $black;
+  opacity: 0.8;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: $black;
+  margin-top: 0;
+}
+
+.desc {
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+  opacity: 0.78;
+  text-transform: none;
+}
