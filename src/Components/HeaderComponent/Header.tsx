@@ -43,7 +43,9 @@ const Header = () => {
         </li>
       </ul>
       <div className={`${styles.button}`}>
-        <Button primary={true}>Contact Us</Button>
+        <Link to={'/contact-us'}>
+          <Button primary={true}>Contact Us</Button>
+        </Link>
       </div>
     </header>
   );

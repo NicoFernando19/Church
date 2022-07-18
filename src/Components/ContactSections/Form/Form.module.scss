@@ -1,0 +1,106 @@
+@import 'styles/colors.scss';
+@import 'styles/aboutImages.scss';
+@import 'styles/typography.scss';
+
+.padding {
+  padding: 5rem 0 5rem 0;
+}
+
+.row {
+  justify-content: left;
+  gap: 6rem;
+  margin: 0 0 0 8.5%;
+}
+
+.input {
+  background-color: $white;
+  border-radius: 4px;
+  margin: 0.5rem 0 0.5rem 0;
+
+  &::placeholder {
+    color: $black;
+    opacity: 0.8;
+  }
+  &:-ms-input-placeholder {
+    color: $black;
+    opacity: 0.8;
+  }
+  &::-ms-input-placeholder {
+    color: $black;
+    opacity: 0.8;
+  }
+}
+
+.rowHeader {
+  justify-content: left;
+  margin: 0 0 0 8.5%;
+}
+
+.button {
+  width: 100%;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.headPage {
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: $dark;
+}
+
+.rightSide {
+  text-align: left;
+}
+
+.header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $dark;
+  opacity: 0.7;
+  text-transform: none;
+}
+
+.subHeader {
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: $black;
+  width: 60%;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 6px;
+}
+
+.socmed {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.facebook {
+  background-image: $facebook;
+}
+
+.twitter {
+  background-image: $twitter;
+}
+
+.linkedin {
+  background-image: $linkedin;
+}
+
+.textArea {
+  font-family: $roboto-reg;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
