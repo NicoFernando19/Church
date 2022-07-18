@@ -5,8 +5,13 @@ import Text from 'elements/text/Text';
 import styles from './Header.module.scss';
 import { useParams } from 'react-router-dom';
 import HeaderImage from 'Storage/blogPost/header.png';
+import { Post } from 'model/models';
 
-const Header = () => {
+interface Props {
+  blogPost: Post;
+}
+
+const Header = ({ blogPost = {} }: Props) => {
   const { title } = useParams();
   return (
     <Container className={styles.padding}>
@@ -15,7 +20,7 @@ const Header = () => {
       </Row>
       <Row className={styles.row}>
         <Text heading={'h2'} className={styles.headline}>
-          {title?.replaceAll('_', ' ')}
+          {blogPost.title ? blogPost.title : title?.replaceAll('_', ' ')}
         </Text>
       </Row>
       <Row className={styles.row}>
@@ -24,7 +29,7 @@ const Header = () => {
             13 May, 2018
           </Text>
           <Text heading={'h6'} className={styles.subText}>
-            By Mathew Johnson
+            By {blogPost.user?.name ? blogPost.user?.name : 'Mathew Johnson'}
           </Text>
         </div>
       </Row>

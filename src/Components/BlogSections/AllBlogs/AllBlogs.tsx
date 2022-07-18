@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from 'elements/wrapper/container/Container';
 import Row from 'elements/wrapper/row/Row';
 import Text from 'elements/text/Text';
 import CardV2 from 'Components/cardv2/CardV2';
 import styles from './AllBlogs.module.scss';
 import { Link, useLocation } from 'react-router-dom';
+import blogpostsService from 'services/blogposts.service';
+import { Post, User } from 'model/models';
 
 const AllBlogs = () => {
   const { pathname } = useLocation();
+
+  const [blogPosts, setBlogPosts] = useState<Post[]>([]);
+
+  const loadData = async () => {
+    const posts = await blogpostsService.getPosts();
+    const users = await blogpostsService.getUsers();
+
+    const postWithUser = posts.map((post: Post) => {
+      const user = users.find((user: User) => {
+        return user.id == post.userId;
+      });
+      post = {
+        ...post,
+        user: user,
+      };
+      return post;
+    });
+    setBlogPosts(postWithUser);
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
   return (
     <Container className={styles.padding}>
       <Row className={styles.row}>
@@ -17,101 +43,23 @@ const AllBlogs = () => {
       </Row>
       <Row className={styles.cardRow}>
         <div className={styles.cards}>
-          <Link
-            to={`${pathname}/${'THE BEST WAY TO INSPIRE PEOPLE'.replaceAll(
-              ' ',
-              '_'
-            )}`}
-          >
-            <CardV2
-              title='THE BEST WAY TO INSPIRE PEOPLE'
-              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
-          <Link
-            to={`${pathname}/${'HOW TO SHOW COMPASSION'.replaceAll(' ', '_')}`}
-          >
-            <CardV2
-              title='HOW TO SHOW COMPASSION'
-              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
-          <Link
-            to={`${pathname}/${'THE BIBLICAL PURPOSE OF MONEY'.replaceAll(
-              ' ',
-              '_'
-            )}`}
-          >
-            <CardV2
-              title='THE BIBLICAL PURPOSE OF MONEY'
-              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
-          <Link
-            to={`${pathname}/${'THE BEST WAY TO INSPIRE PEOPLE'.replaceAll(
-              ' ',
-              '_'
-            )}`}
-          >
-            <CardV2
-              title='THE BEST WAY TO INSPIRE PEOPLE'
-              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
-          <Link
-            to={`${pathname}/${'WHAT IT MEANS TO BE A DISCIPLE'.replaceAll(
-              ' ',
-              '_'
-            )}`}
-          >
-            <CardV2
-              title='WHAT IT MEANS TO BE A DISCIPLE'
-              desc='We both celebrate and challenge the culture around us as we orient our lives around Jesus. We want'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
-          <Link
-            to={`${pathname}/${'WHAT IT MEANS TO BELIEVE'.replaceAll(
-              ' ',
-              '_'
-            )}`}
-          >
-            <CardV2
-              title='WHAT IT MEANS TO BELIEVE'
-              desc='We both celebrate and challenge the culture around us as we orient our lives around Jesus. We want'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
-          <Link
-            to={`${pathname}/${'the modern chruch in 2022'.replaceAll(
-              ' ',
-              '_'
-            )}`}
-          >
-            <CardV2
-              title='the modern chruch in 2022'
-              desc='We both celebrate and challenge the culture around us as we orient our lives around Jesus. We want'
-              speaker='By Mathew Johnson'
-              date='Tuesday 13 May, 2021'
-              className={styles.cardColor}
-            />
-          </Link>
+          {blogPosts.length > 0 &&
+            blogPosts.map((post: Post, idx) => (
+              <Link
+                to={`${pathname}/${
+                  post.title ? post.title.replaceAll(' ', '_') : ''
+                }?id=${post.id}`}
+                key={idx}
+              >
+                <CardV2
+                  title={post.title}
+                  desc={post.body}
+                  speaker={`By ${post.title}`}
+                  date='Tuesday 13 May, 2021'
+                  className={styles.cardColor}
+                />
+              </Link>
+            ))}
         </div>
       </Row>
     </Container>
