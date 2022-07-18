@@ -1,4 +1,6 @@
 import About from 'pages/About/About';
+import Blog from 'pages/Blog/Blog';
+import BlogPost from 'pages/BlogPost/BlogPost';
 import SermonEvent from 'pages/SermonEvent/SermonEvent';
 import Sermons from 'pages/Sermons/Sermons';
 import React from 'react';
@@ -16,6 +18,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/blog/:title' element={<BlogPost />} />
           <Route path='/sermons' element={<Sermons />} />
           <Route path='/sermons/event' element={<SermonEvent />} />
         </Routes>

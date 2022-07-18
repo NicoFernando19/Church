@@ -7,6 +7,7 @@ interface Props {
   desc?: string;
   speaker: string;
   date: string;
+  className?: string;
 }
 
 const defaultProps = {
@@ -14,11 +15,12 @@ const defaultProps = {
   desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
   speaker: 'By Mathew Johnson',
   date: 'Tuesday 13 May, 2021',
+  className: '',
 };
 
-const CardV2 = ({ title, desc, speaker, date }: Props) => {
+const CardV2 = ({ title, desc, speaker, date, className }: Props) => {
   return (
-    <div className={`${styles.card} ${styles.bgColor}`}>
+    <div className={`${styles.card} ${styles.bgColor} ${className}`}>
       <div className={styles.padding}>
         <Text className={styles.relation}>Relationship</Text>
         <Text heading={'h5'} className={styles.title}>
