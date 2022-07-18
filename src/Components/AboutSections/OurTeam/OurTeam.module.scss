@@ -1,0 +1,44 @@
+@import 'styles/colors.scss';
+@import 'styles/aboutImages.scss';
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.margin {
+  margin: 5rem 0 5rem 0;
+}
+
+.subHeadline {
+  color: $black;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.ourTeamRow {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.member1 {
+  background-image: $woman1;
+}
+
+.member2 {
+  background-image: $woman2;
+}
+
+.member3 {
+  background-image: $woman3;
+}
+
+.member4 {
+  background-image: $man;
+}

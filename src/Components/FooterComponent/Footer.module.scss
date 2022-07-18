@@ -1,5 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
 
 .footer {
   display: flex;
@@ -38,6 +38,7 @@
 }
 
 .textLink {
+  color: $white;
   opacity: 0.78;
 }
 
@@ -61,6 +62,8 @@
 }
 
 .inputField {
+  background-color: $black;
+  color: $white;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }

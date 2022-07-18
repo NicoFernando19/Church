@@ -1,11 +1,9 @@
-@import "../../styles/colors.scss";
+@import '../../styles/colors.scss';
 
 .input {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  background-color: $black;
-  color: $white;
   height: 100%;
   width: 100%;
   padding: 1rem;

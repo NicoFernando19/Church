@@ -1,0 +1,90 @@
+@import 'styles/colors.scss';
+@import 'styles/homeImages.scss';
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.margin {
+  margin: 5rem 0 5rem 0;
+}
+
+.subHeadline {
+  color: $black;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.flex {
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.textWrapper {
+  width: 45%;
+}
+
+.textDesc {
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $black;
+  opacity: 0.78;
+  text-transform: none;
+}
+
+.contentCenter {
+  justify-content: center;
+}
+
+.imageLeft {
+  background-image: $beardedMan;
+  margin-top: 6rem;
+}
+
+.imageCenter {
+  background-image: $readingBook;
+}
+
+.imageRight {
+  background-image: $blessingImage;
+  margin-top: 6rem;
+}
+
+.card {
+  width: 20%;
+  text-align: left;
+}
+
+.subBoxText {
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
+}
+
+.titleBoxText {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: $black;
+}
+
+.descText {
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+  opacity: 0.78;
+  text-transform: none;
+}
