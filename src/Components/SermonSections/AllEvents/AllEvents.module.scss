@@ -1,0 +1,29 @@
+@import 'styles/colors.scss';
+
+.headline {
+  color: $black;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.margin {
+  margin: 5rem 0 5rem 0;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.cardRow {
+  justify-content: center;
+  gap: 25px;
+}
+
+.event {
+  background-color: $ligth-orange;
+}
+
+.event:hover {
+  cursor: pointer;
+}
