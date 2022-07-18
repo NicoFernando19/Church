@@ -4,13 +4,18 @@ import Row from 'elements/wrapper/row/Row';
 import Text from 'elements/text/Text';
 import styles from './Body.module.scss';
 import ContentImage from 'Storage/blogPost/content.png';
+import { Post } from 'model/models';
 
-const Body = () => {
+interface Props {
+  blogPost: Post;
+}
+
+const Body = ({ blogPost = {} }: Props) => {
   return (
     <Container className={styles.body}>
       <Row className={styles.row}>
         <Text heading={'h2'} className={styles.headline}>
-          LOREM IPSUM DOLOR SIT AMET
+          {blogPost.title ? blogPost.title : 'LOREM IPSUM DOLOR SIT AMET'}
         </Text>
       </Row>
       <Row className={styles.row}>
@@ -38,7 +43,7 @@ const Body = () => {
       </Row>
       <Row className={styles.row}>
         <Text heading={'h4'} className={styles.title}>
-          LOREM IPSUM DOLOR SIT AMET
+          {blogPost.title ? blogPost.title : 'LOREM IPSUM DOLOR SIT AMET'}
         </Text>
       </Row>
       <Row className={styles.row}>
@@ -73,7 +78,9 @@ const Body = () => {
       </Row>
       <Row className={styles.row}>
         <Text heading={'h4'} className={styles.title}>
-          LOREM IPSUM DOLOR SIT AMET CONSECTETUR
+          {blogPost.title
+            ? blogPost.title
+            : 'LOREM IPSUM DOLOR SIT AMET CONSECTETUR'}
         </Text>
       </Row>
       <Row className={styles.row}>
