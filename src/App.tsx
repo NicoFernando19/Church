@@ -1,4 +1,5 @@
 import About from 'pages/About/About';
+import Contact from 'pages/Contact/Contact';
 import Blog from 'pages/Blog/Blog';
 import BlogPost from 'pages/BlogPost/BlogPost';
 import SermonEvent from 'pages/SermonEvent/SermonEvent';
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/contact-us' element={<Contact />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/blog/:title' element={<BlogPost />} />
           <Route path='/sermons' element={<Sermons />} />
