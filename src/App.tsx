@@ -7,25 +7,26 @@ import Sermons from 'pages/Sermons/Sermons';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
-import Footer from './Components/FooterComponent/Footer';
-import Header from './Components/HeaderComponent/Header';
 import Home from './pages/Home/Home';
+import StyleGuide from 'pages/StyleGuide/StyleGuide';
+import DefaultLayout from 'layouts/default/Default';
 
 function App() {
   return (
     <div className='App'>
       <Router>
-        <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact-us' element={<Contact />} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/blog/:title' element={<BlogPost />} />
-          <Route path='/sermons' element={<Sermons />} />
-          <Route path='/sermons/event' element={<SermonEvent />} />
+          <Route path='/Style' element={<StyleGuide />} />
+          <Route element={<DefaultLayout />}>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact-us' element={<Contact />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/blog/:title' element={<BlogPost />} />
+            <Route path='/sermons' element={<Sermons />} />
+            <Route path='/sermons/event' element={<SermonEvent />} />
+          </Route>
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
