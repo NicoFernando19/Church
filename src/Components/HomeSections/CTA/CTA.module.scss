@@ -1,5 +1,5 @@
-@import 'styles/colors.scss';
-@import 'styles/homeImages.scss';
+@import 'Styles/Colors.scss';
+@import 'Styles/HomeImages.scss';
 
 .margin {
   margin: 5rem 0 5rem 0;
@@ -24,8 +24,8 @@
 .containerOverlay {
   background: linear-gradient(
     109.61deg,
-    $red-orange -53.83%,
-    $ligth-brown 62.61%
+    $redOrange -53.83%,
+    $lightBrown 62.61%
   );
   position: absolute;
   width: 100%;

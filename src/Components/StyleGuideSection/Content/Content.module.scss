@@ -1,0 +1,117 @@
+@import 'Styles/Colors.scss';
+@import 'Styles/Global.scss';
+
+.row {
+  justify-content: space-between;
+}
+
+.margin {
+  margin: 5rem;
+}
+
+.my {
+  margin: 0 5rem 0 5rem;
+}
+
+.mx {
+  margin: 3rem 5rem 3rem 5rem;
+}
+
+.table {
+  width: 90%;
+  text-align: left;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: $black;
+  margin: 0;
+  text-transform: none;
+}
+
+.textTile {
+  display: flex;
+  gap: 25px;
+}
+
+.roboto {
+  font-size: 24px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  background: $lightOrange;
+  padding: 2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.circle {
+  background: $primary;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+}
+
+.iconFile {
+  background: $fileImage;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+}
+
+.textHeading {
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: -0.01em;
+  color: $black;
+}
+
+.colorPalette {
+  width: 40%;
+  height: 100px;
+}
+
+.black {
+  background-color: $black;
+}
+
+.primary {
+  background-color: $primary;
+}
+
+.lOrange {
+  background-color: $lightOrange;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  pointer-events: none;
+}
+
+.marginBtn {
+  margin: 1rem;
+}
+
+.hoverPrimaryBtn {
+  background-color: $hover-primary;
+}
+
+.hoverSecondaryBtn {
+  color: $white;
+}

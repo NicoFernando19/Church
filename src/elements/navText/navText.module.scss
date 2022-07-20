@@ -1,8 +1,8 @@
-@import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import 'Styles/Colors.scss';
+@import 'Styles/Typography.scss';
 
 .navText {
-  font-family: $roboto-reg;
+  font-family: $robotoReg;
   font-style: normal;
   font-weight: 400;
   font-size: $heading6;

@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Tile from 'elements/wrapper/tile/Tile';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Tile from 'Elements/Wrappers/Tile/Tile';
 import styles from './CTA.module.scss';
-import Text from 'elements/text/Text';
-import Button from 'elements/button/Button';
+import Text from 'Elements/Text/Text';
+import Button from 'Elements/Button/Button';
 import QuoteIcon from 'Storage/Images/Quoteicon.png';
 
 const CTA = () => {

@@ -1,6 +1,6 @@
-@import 'styles/colors.scss';
-@import 'styles/aboutImages.scss';
-@import 'styles/typography.scss';
+@import 'Styles/Colors.scss';
+@import 'Styles/AboutImages.scss';
+@import 'Styles/Typography.scss';
 
 .padding {
   padding: 5rem 0 5rem 0;
@@ -96,7 +96,7 @@
 }
 
 .textArea {
-  font-family: $roboto-reg;
+  font-family: $robotoReg;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;

@@ -1,9 +1,9 @@
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Text from 'elements/text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Text from 'Elements/Text/Text';
 import React from 'react';
 import styles from './OurBlog.module.scss';
-import RecentPost from 'Components/recentPost/RecentPost';
+import RecentPost from 'Components/RecentPost/RecentPost';
 
 const OurBlog = () => {
   return (

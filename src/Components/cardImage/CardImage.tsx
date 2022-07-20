@@ -1,7 +1,7 @@
-import React from "react";
-import Text from "elements/text/Text";
-import styles from "./CardImage.module.scss";
-import PropTypes from "prop-types";
+import React from 'react';
+import Text from 'Elements/Text/Text';
+import styles from './CardImage.module.scss';
+import PropTypes from 'prop-types';
 
 interface Props {
   image: string;
@@ -11,15 +11,15 @@ interface Props {
 
 const defaultProps: Props = {
   image: styles.defaultBackground,
-  title: "Watch and listen to our sermons",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+  title: 'Watch and listen to our sermons',
+  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
 };
 
 const CardImage = ({ image, title, desc }: Props) => {
   return (
     <div className={`${styles.background} ${image}`}>
       <div className={styles.titleWrapper}>
-        <Text heading={"h4"} className={styles.title}>
+        <Text heading={'h4'} className={styles.title}>
           {title}
         </Text>
         <Text className={styles.desc}>{desc}</Text>

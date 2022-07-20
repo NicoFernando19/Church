@@ -1,11 +1,11 @@
 import React from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Text from 'elements/text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Text from 'Elements/Text/Text';
 import styles from './Header.module.scss';
 import { useParams } from 'react-router-dom';
-import HeaderImage from 'Storage/blogPost/header.png';
-import { Post } from 'model/models';
+import HeaderImage from 'Storage/BlogPost/header.png';
+import { Post } from 'Model/Models';
 
 interface Props {
   blogPost: Post;

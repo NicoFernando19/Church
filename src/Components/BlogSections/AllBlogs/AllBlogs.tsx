@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Text from 'elements/text/Text';
-import CardV2 from 'Components/cardv2/CardV2';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Text from 'Elements/Text/Text';
+import CardV2 from 'Components/CardV2/CardV2';
 import styles from './AllBlogs.module.scss';
 import { Link, useLocation } from 'react-router-dom';
-import blogpostsService from 'services/blogposts.service';
-import { Post, User } from 'model/models';
+import blogpostsService from 'Services/BlogPosts.service';
+import { Post, User } from 'Model/Models';
 
 const AllBlogs = () => {
   const { pathname } = useLocation();

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import config from 'static/config';
-import { Post, User } from 'model/models';
+import config from 'Static/Config';
+import { Post, User } from 'Model/Models';
 
 export default {
   async getPosts() {

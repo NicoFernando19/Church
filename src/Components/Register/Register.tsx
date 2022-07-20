@@ -1,8 +1,8 @@
 import React from 'react';
-import Tile from 'elements/wrapper/tile/Tile';
+import Tile from 'Elements/Wrappers/Tile/Tile';
 import styles from './Register.module.scss';
-import Text from 'elements/text/Text';
-import Button from 'elements/button/Button';
+import Text from 'Elements/Text/Text';
+import Button from 'Elements/Button/Button';
 
 const Register = () => {
   return (
