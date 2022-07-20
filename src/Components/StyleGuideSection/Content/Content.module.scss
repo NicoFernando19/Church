@@ -1,5 +1,5 @@
-@import 'styles/colors.scss';
-@import 'styles/global.scss';
+@import 'Styles/Colors.scss';
+@import 'Styles/Global.scss';
 
 .row {
   justify-content: space-between;
@@ -46,7 +46,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   justify-items: center;
-  background: $ligth-orange;
+  background: $lightOrange;
   padding: 2rem;
   width: 100%;
   align-items: center;
@@ -88,7 +88,7 @@
 }
 
 .lOrange {
-  background-color: $ligth-orange;
+  background-color: $lightOrange;
 }
 
 .grey {

@@ -1,8 +1,8 @@
 import React from 'react';
-import Text from 'elements/text/Text';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Event from 'Components/event/Event';
+import Text from 'Elements/Text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Event from 'Components/Event/Event';
 import styles from './Upcoming.module.scss';
 
 const Upcoming = () => {

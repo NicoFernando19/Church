@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Text from 'elements/text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Text from 'Elements/Text/Text';
 import styles from './AllEvents.module.scss';
-import Event from 'Components/event/Event';
+import Event from 'Components/Event/Event';
 
 const AllEvents = () => {
   return (

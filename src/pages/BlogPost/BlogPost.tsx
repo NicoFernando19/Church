@@ -1,9 +1,9 @@
 import Body from 'Components/BlogPostSections/Body/Body';
 import Header from 'Components/BlogPostSections/Header/Header';
-import { Post } from 'model/models';
+import { Post } from 'Model/Models';
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import blogpostsService from 'services/blogposts.service';
+import blogpostsService from 'Services/BlogPosts.service';
 import styles from './BlogPost.module.scss';
 
 const BlogPost = () => {

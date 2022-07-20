@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
 import styles from './Content.module.scss';
-import Tile from 'elements/wrapper/tile/Tile';
-import Text from 'elements/text/Text';
-import Button from 'elements/button/Button';
+import Tile from 'Elements/Wrappers/Tile/Tile';
+import Text from 'Elements/Text/Text';
+import Button from 'Elements/Button/Button';
 
 const Content = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import Tile from 'elements/wrapper/tile/Tile';
-import Text from 'elements/text/Text';
+import Tile from 'Elements/Wrappers/Tile/Tile';
+import Text from 'Elements/Text/Text';
 import styles from './RecentPost.module.scss';
-import Kids from 'Storage/blogImage/kids.png';
-import Button from 'elements/button/Button';
+import Kids from 'Storage/BlogImage/kids.png';
+import Button from 'Elements/Button/Button';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 

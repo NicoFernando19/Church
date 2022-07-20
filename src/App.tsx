@@ -1,15 +1,15 @@
-import About from 'pages/About/About';
-import Contact from 'pages/Contact/Contact';
-import Blog from 'pages/Blog/Blog';
-import BlogPost from 'pages/BlogPost/BlogPost';
-import SermonEvent from 'pages/SermonEvent/SermonEvent';
-import Sermons from 'pages/Sermons/Sermons';
+import About from 'Pages/About/About';
+import Contact from 'Pages/Contact/Contact';
+import Blog from 'Pages/Blog/Blog';
+import BlogPost from 'Pages/BlogPost/BlogPost';
+import SermonEvent from 'Pages/SermonEvent/SermonEvent';
+import Sermons from 'Pages/Sermons/Sermons';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
-import Home from './pages/Home/Home';
-import StyleGuide from 'pages/StyleGuide/StyleGuide';
-import DefaultLayout from 'layouts/default/Default';
+import Home from './Pages/Home/Home';
+import StyleGuide from 'Pages/StyleGuide/StyleGuide';
+import DefaultLayout from 'Layouts/Default/Default';
 
 function App() {
   return (

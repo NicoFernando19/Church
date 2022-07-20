@@ -1,16 +1,16 @@
-import React, { ReactNode } from "react";
-import styles from "./button.module.scss";
-import PropTypes from "prop-types";
+import React, { ReactNode } from 'react';
+import styles from './Button.module.scss';
+import PropTypes from 'prop-types';
 
 interface Props {
   children?: ReactNode;
   primary?: boolean;
-  type?: "submit" | "reset" | "button";
+  type?: 'submit' | 'reset' | 'button';
   className?: string;
 }
 
 const defaultProps: Props = {
-  type: "button",
+  type: 'button',
 };
 
 const Button: React.FC<Props> = ({

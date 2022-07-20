@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Text from 'elements/text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Text from 'Elements/Text/Text';
 import styles from './Blog.module.scss';
-import CardV2 from 'Components/cardv2/CardV2';
+import CardV2 from 'Components/CardV2/CardV2';
 
 const Blog = () => {
   return (

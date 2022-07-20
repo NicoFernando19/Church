@@ -1,9 +1,9 @@
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
 import React from 'react';
 import styles from './Header.module.scss';
-import Logo from 'Storage/styleGuide/Logo.png';
-import Text from 'elements/text/Text';
+import Logo from 'Storage/StyleGuide/Logo.png';
+import Text from 'Elements/Text/Text';
 
 const Header = () => {
   return (
