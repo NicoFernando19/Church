@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Event.module.scss';
-import Text from 'elements/text/Text';
-import Button from 'elements/button/Button';
+import Text from 'Elements/Text/Text';
+import Button from 'Elements/Button/Button';
 
 interface Props {
   title?: string;

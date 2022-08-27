@@ -1,28 +1,28 @@
-import React from "react";
-import Text from "elements/text/Text";
-import Gallery from "elements/gallery/Gallery";
-import Container from "elements/wrapper/container/Container";
-import Row from "elements/wrapper/row/Row";
-import styles from "./Welcome.module.scss";
-import Button from "elements/button/Button";
+import React from 'react';
+import Text from 'Elements/Text/Text';
+import Gallery from 'Elements/Gallery/Gallery';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import styles from './Welcome.module.scss';
+import Button from 'Elements/Button/Button';
 
 const Welcome = () => {
   return (
     <Container className={styles.margin}>
       <Row className={styles.row}>
-        <Text heading={"h6"} className={styles.subHeadline}>
+        <Text heading={'h6'} className={styles.subHeadline}>
           Sub-Headline
         </Text>
       </Row>
       <Row className={styles.row}>
-        <Text heading={"h2"} className={styles.headline}>
+        <Text heading={'h2'} className={styles.headline}>
           Love and Compassion
         </Text>
       </Row>
       <Row className={styles.row}>
         <div className={styles.rowTextDesc}>
           <Text
-            heading={"h6"}
+            heading={'h6'}
             className={`${styles.subHeadline} ${styles.welcomeDesc}`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -45,25 +45,25 @@ const Welcome = () => {
         />
       </Row>
       <Row className={`${styles.row} ${styles.ourMissionMargin}`}>
-        <Text heading={"h6"} className={styles.ourMission}>
+        <Text heading={'h6'} className={styles.ourMission}>
           Our Mission & Vision
         </Text>
       </Row>
       <Row className={styles.row}>
-        <Text heading={"h4"} className={styles.celebrate}>
+        <Text heading={'h4'} className={styles.celebrate}>
           Celebrate with us
         </Text>
       </Row>
       <Row className={styles.row}>
-        <div style={{ width: "28%" }}>
-          <Text heading={"h6"} className={styles.loremText}>
+        <div style={{ width: '28%' }}>
+          <Text heading={'h6'} className={styles.loremText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Text>
         </div>
       </Row>
       <Row className={styles.row}>
-        <Text heading={"h6"} className={styles.readMore}>
+        <Text heading={'h6'} className={styles.readMore}>
           Read More &rarr;
         </Text>
       </Row>

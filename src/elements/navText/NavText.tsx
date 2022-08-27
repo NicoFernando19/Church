@@ -1,6 +1,6 @@
-import React, { ReactNode } from "react";
-import styles from "./navText.module.scss";
-import PropTypes from "prop-types";
+import React, { ReactNode } from 'react';
+import styles from './NavText.module.scss';
+import PropTypes from 'prop-types';
 
 interface Props {
   children?: ReactNode;

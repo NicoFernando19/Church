@@ -1,16 +1,16 @@
 @font-face {
   font-family: robotoCondensedReguler;
-  src: url("../../public/Roboto-font/RobotoCondensed-Regular.ttf");
+  src: url('../../public/Roboto-font/RobotoCondensed-Regular.ttf');
 }
 
 @font-face {
   font-family: robotoCondensedLight;
-  src: url("../../public/Roboto-font/RobotoCondensed-Light.ttf");
+  src: url('../../public/Roboto-font/RobotoCondensed-Light.ttf');
 }
 
 @font-face {
   font-family: robotoCondensedBold;
-  src: url("../../public/Roboto-font/RobotoCondensed-Bold.ttf");
+  src: url('../../public/Roboto-font/RobotoCondensed-Bold.ttf');
 }
 
 $heading1: 64px;
@@ -20,6 +20,6 @@ $heading4: 32px;
 $heading5: 24px;
 $heading6: 16px;
 $default: 12px;
-$roboto-reg: robotoCondensedReguler;
-$roboto-light: robotoCondensedLight;
-$roboto-bold: robotoCondensedBold;
+$robotoReg: robotoCondensedReguler;
+$robotoLight: robotoCondensedLight;
+$robotoBold: robotoCondensedBold;
