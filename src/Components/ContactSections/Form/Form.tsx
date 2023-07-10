@@ -1,10 +1,10 @@
 import React from 'react';
-import Text from 'elements/text/Text';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
+import Text from 'Elements/Text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
 import styles from './Form.module.scss';
-import Input from 'elements/input/Input';
-import Button from 'elements/button/Button';
+import Input from 'Elements/Input/Input';
+import Button from 'Elements/Button/Button';
 
 const Form = () => {
   return (

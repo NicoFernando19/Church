@@ -1,4 +1,4 @@
-import Text from 'elements/text/Text';
+import Text from 'Elements/Text/Text';
 import React from 'react';
 import styles from './CardV2.module.scss';
 

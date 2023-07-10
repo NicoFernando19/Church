@@ -1,12 +1,12 @@
 import React from 'react';
-import Container from 'elements/wrapper/container/Container';
-import Row from 'elements/wrapper/row/Row';
-import Text from 'elements/text/Text';
+import Container from 'Elements/Wrappers/Container/Container';
+import Row from 'Elements/Wrappers/Row/Row';
+import Text from 'Elements/Text/Text';
 import styles from './Benefits.module.scss';
-import FulfillmentAndJoy from 'Storage/aboutImages/fulfillmentandJoy.png';
-import CharityEvents from 'Storage/aboutImages/charity.png';
-import AllAreWelcome from 'Storage/aboutImages/allarewelcome.png';
-import SharedValues from 'Storage/aboutImages/sharedvalues.png';
+import FulfillmentAndJoy from 'Storage/AboutImages/fulfillmentandJoy.png';
+import CharityEvents from 'Storage/AboutImages/charity.png';
+import AllAreWelcome from 'Storage/AboutImages/allarewelcome.png';
+import SharedValues from 'Storage/AboutImages/sharedvalues.png';
 
 const Benefits = () => {
   return (

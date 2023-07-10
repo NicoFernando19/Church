@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
-import PropTypes from "prop-types";
-import Text from "elements/text/Text";
-import styles from "./CardV1.module.scss";
+import React, { ReactNode } from 'react';
+import PropTypes from 'prop-types';
+import Text from 'Elements/Text/Text';
+import styles from './CardV1.module.scss';
 
 interface Props {
   icon: string;
@@ -10,10 +10,10 @@ interface Props {
 }
 
 const defaultProps: Props = {
-  icon: "Icon",
-  title: "Title here",
+  icon: 'Icon',
+  title: 'Title here',
   children:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 };
 
 const CardV1 = ({ icon, title, children }: Props) => {
@@ -22,13 +22,13 @@ const CardV1 = ({ icon, title, children }: Props) => {
       <div className={styles.padding}>
         <div className={`${styles.circle} ${icon}`}></div>
         <Text
-          heading={"h4"}
+          heading={'h4'}
           className={`${styles.textColor} ${styles.titleText}`}
         >
           {title}
         </Text>
         <Text
-          heading={"h6"}
+          heading={'h6'}
           className={`${styles.textColor} ${styles.descText}`}
         >
           {children}

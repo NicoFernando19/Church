@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import { Logo, Facebook, Twitter, LinkedIn } from 'Storage/footerImage/index';
-import Text from 'elements/text/Text';
-import Input from 'elements/input/Input';
-import Button from 'elements/button/Button';
+import { Logo, Facebook, Twitter, LinkedIn } from 'Storage/FooterImage/index';
+import Text from 'Elements/Text/Text';
+import Input from 'Elements/Input/Input';
+import Button from 'Elements/Button/Button';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
