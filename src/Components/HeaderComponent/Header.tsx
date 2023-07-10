@@ -28,14 +28,24 @@ const Header = () => {
           </NavText>
         </li>
         <li className={styles.headerList}>
-          <NavText>Sermon</NavText>
+          <NavText>
+            <Link to='/sermons'>
+              <a className={styles.textLink}>Sermon</a>
+            </Link>
+          </NavText>
         </li>
         <li className={styles.headerList}>
-          <NavText>Blog</NavText>
+          <NavText>
+            <Link to='/blog'>
+              <a className={styles.textLink}>Blog</a>
+            </Link>
+          </NavText>
         </li>
       </ul>
       <div className={`${styles.button}`}>
-        <Button primary={true}>Contact Us</Button>
+        <Link to={'/contact-us'}>
+          <Button primary={true}>Contact Us</Button>
+        </Link>
       </div>
     </header>
   );
